@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+     integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o"
+     crossorigin="anonymous"
+   />
+   <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+   />
+   <link rel="stylesheet" href="main.css">
+     <title>Document</title>
+</head>
+<body dir="rtl">
+     <div class="header finisher-header" style="width: 100%; height: 600px; position: relative; z-index:10;">
+          <nav class="navbar navbar-expand-lg ">
+               <div class="container">
+               <a class="navbar-brand " href="#">
+                <img src="img/logo.56dd883.png"style="width:50px;">
+               </a>
+               <!-- <a class="navbar-brand" href="#">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-in-left JHG DFG" viewBox="0 0 16 16">
+                   <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+                   <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                 </svg>
+               </a> -->
+               <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-justify DFG" viewBox="0 0 16 16">
+                   <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                 </svg>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
+                 <li class="nav-item m-2">
+                   <a class="nav-link  text-white active" aria-current="page" href="#">خانه</a>
+                 </li>
+                 <li class="nav-item dropdown m-2">
+                   <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   سریال
+                   </a>
+                   <ul class="dropdown-menu bg-light opacity-75 ">
+                   <li><a class="dropdown-item " href="#">انیمیشن</a></li>
+                   <li><a class="dropdown-item" href="#">اکشن</a></li>
+                   <li><a class="dropdown-item " href="#">علمی-تخیلی</a></li>
+                   <li><a class="dropdown-item " href="#">کمدی</a></li>
+                   <li><a class="dropdown-item " href="#">خانوادگی</a></li>
+                   <li><a class="dropdown-item " href="#">درام</a></li>
+                   <li><a class="dropdown-item " href="#">تاریخی</a></li>
+                   <li><a class="dropdown-item " href="#">جنگی</a></li>
+                   <li><a class="dropdown-item " href="#">مستند</a></li>
+                   </ul>
+                   </li>
+               <li class="nav-item m-2">
+                 <a class="nav-link text-white" aria-current="page" href="#">فیلم</a>
+               </li>
+               <li class="nav-item m-2">
+                 <a class="nav-link text-white" aria-current="page" href="#">کودک</a>
+               </li>
+               <li class="nav-item m-2">
+                 <a class="nav-link text-white" aria-current="page" href="#">وبلاگ</a>
+               </li>
+               <li class="nav-item m-2">
+                 <a class="nav-link text-white" aria-current="page" href="#">پشتیبانی</a>
+               </li>
+               </ul>
+          
+               <div class="search-box d-flex">
+                <input class="search-txt align-items-center form-control" type="text" name="" placeholder="جستجو...">
+                <a class="search-btn" href="#">
+                     <i class="fa-search">
+                          <img src="icon-img/serch.svg">
+                     </i>
+                </a>
+             </div>
+             <button class="cssbuttons-io-button mt-4 ms-3">
+             ورود به سایت
+              <div class="icon">
+                <svg height="24"width="24"viewBox="0 0 24 24"xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    fill="currentColor">
+                  </path>
+                </svg>
+              </div>
+            </button>
+            
+               </div>
+               </div>
+               </div>
+               </nav>
+                 <div class="container">
+                    <div class="row align-items-center">
+                 <div class="col  text-center position-absolute top-50 start-50 translate-middle TWQ" style="z-index: 10;">
+                    𝐌𝐨𝐯𝐢𝐞 𝐅𝐢𝐥𝐦𝐬
+                 </div>
+                    </div>
+                 </div>
+        </div>
+        <div class="section">
+          <div class="box-content ">
+          <div class="container ">
+               <div class="row gy-5">
+                <div class="col-md-3 ">
+                  <div class="img1 imagen  " style="width: 100%; height: 100%;">
+                  <div class="captioncontainer">
+                    <div class="caption align-items-center">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle QLK " viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                        </svg>
+                      </a>
+                      <br>
+                      <i class="fas fa-listm text-center">carnivalRow</i>
+                      <div class="dfilm ">
+                        <i class="fas fa-list text-center">گذر کارناوال</i>
+                   
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-3"> 
+                   <!-- <img class="img-fluid SWE"src="img/portrait3.jpg">-->
+                   <div class="img2 imagen">
+                    <div class="captioncontainer">
+                      <div class="caption align-items-center">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle QLK " viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                          </svg>
+                        </a>
+                        <br>
+                        <i class="fas fa-listm text-center">cursed</i>
+                        <div class="dfilm ">
+                          <i class="fas fa-list text-center">نفرین شده</i>
+                     
+                        
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                <div class="col-md-3">
+               
+                  <div class="img3 imagen">
+                    <div class="captioncontainer">
+                      <div class="caption align-items-center">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle QLK " viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                          </svg>
+                        </a>
+                        <br>
+                        <i class="fas fa-listm text-center">under wraps</i>
+                        <div class="dfilm ">
+                          <i class="fas fa-list text-center">تحت پوشش2</i>
+                     
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="row">
+                  <div class="col-md-3 SWE " style="width: 100%;height: 100%;">
+                    <div class="img4 imagen SpE ">
+                      <div class="captioncontainer1">
+                        <div class="caption align-items-center">
+                          <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle QLKf " viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                              <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                            </svg>
+                          </a>
+                          <br>
+                          <!-- <i class="fas fa-listm text-center">the school for good and evil</i> -->
+                          <div class="dfilm1 ">
+                            <i class="fas fa-list text-center">مدرسه خیر و شر</i>
+                       
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="img5 imagen SpE ">
+                        <div class="captioncontainer1">
+                          <div class="caption align-items-center">
+                            <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle QLKf " viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                              </svg>
+                            </a>
+                            <br>
+                            <i class="fas fa-listm text-center"> کیمیاگر تمام فلزی</i>
+                            <div class="dfilm1 ">
+                              <i class="fas fa-list text-center"> </i>
+                         
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  </div>
+                </div>
+               </div>
+          </div>
+        </div>
+        </div>
+
+<section>
+ 
+  <div class="container butt mt-5 mb-5" >
+    <h3 class="text-light m-5">ژانر فیلم و سریال</h3>
+    <button type="button" class="btn btn-outline-danger m-1" style="width:150px;">اکشن</button>
+    <button type="button" class="btn btn-outline-danger m-1"style="width:150px;">کالکشن ها</button>
+    <button type="button" class="btn btn-outline-danger m-1"style="width:150px;">کودک</button>
+    <button type="button" class="btn btn-outline-danger m-1"style="width:150px;">نوجوان</button>
+    <button type="button" class="btn btn-outline-danger m-1"style="width:150px;">انیمیشن</button>
+    <button type="button" class="btn btn-outline-danger m-1"style="width:150px;">انیمه</button>
+    <button type="button" class="btn btn-outline-danger m-1"style="width:150px;">کمدی</button>
+    <button type="button" class="btn btn-outline-danger m-1"style="width:150px;">ترسناک</button>
+  </div>
+</section>
+<!-- <section>
+  <div class="container mt-5" dir="rtl" >
+    <div #swiperref="" class="swiper mySwiper swiper-initialized swiper-horizontal">
+      <div class="swiper-wrapper" id="swiper-wrapper-6a744d4b083f66e9" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(333px, 0px, 0px); transition-delay: 0ms;">
+        
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="3/ 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="4 / 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="5 / 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="6/ 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="7/ 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="7/ 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="8 / 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="9/ 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="10 / 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="11 / 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="12 / 12" style="width: 3px; margin-right: 30px;"> 
+          <div class="card d-flex align-items-center m-3" style=" width: 100%; height: 450px;">
+            <h5 class="card-title text-danger"  > تخفیف ویژه</h5>
+            <div class="col">
+            <img src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." >
+          </div>
+            <div class="card-body">
+              <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+              <h6 class="card-title mt-4">گوشی موبایل 40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</h6>
+            </div>
+            <a href="#" class="card-link text-light rounded p-1" style="background-color: red;">3%</a>
+            <div class="card-body" >
+              <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;">7,049,000 </a>              
+              <a href="#" class="card-link fs-4">6,865,000</a>
+            </div>
+          </div>
+        </div>
+</div> -->
+<!-- <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-6a744d4b083f66e9" aria-disabled="false"></div>
+<div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-6a744d4b083f66e9" aria-disabled="true"></div> -->
+<!-- <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">12</span></div> -->
+<!-- <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> -->
+<!-- </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  var appendNumber = 4;
+  var prependNumber = 1;
+  document
+    .querySelector(".prepend-2-slides")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.prependSlide([
+        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+      ]);
+    });
+  document
+    .querySelector(".prepend-slide")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.prependSlide(
+        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+      );
+    });
+  document
+    .querySelector(".append-slide")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.appendSlide(
+        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+      );
+    });
+  document
+    .querySelector(".append-2-slides")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.appendSlide([
+        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+      ]);
+    });
+</script>
+</div>
+</section> -->
+       
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          new FinisherHeader({
+            "count": 100,
+            "size": {
+              "min": 2,
+              "max": 28,
+              "pulse": 0
+            },
+            "speed": {
+              "x": {
+                "min": 0,
+                "max": 0.4
+              },
+              "y": {
+                "min": 0,
+                "max": 0.6
+              }
+            },
+            "colors": {
+              "background": "#0f1114",
+              "particles": [
+                "#fbfcca",
+                "#d7f3fe",
+                "#ffd0a7"
+              ]
+            },
+            "blending": "overlay",
+            "opacity": {
+              "center": 1,
+              "edge": 0
+            },
+            "skew": -2,
+            "shapes": [
+              "c"
+            ]
+          });
+          </script>
+       <script
+       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+       crossorigin="anonymous"
+     ></script>
+</body>
+</html>

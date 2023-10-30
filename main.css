@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "vazir";
+  src: url("font/vazir.eot");
+  src: url("font/vazir.eot?#iefix") format("embedded-opentype");
+  src: url("font/Vazir.woff2") format("woff2"),
+    url("font/Vazir.woff") format("woff"),
+    url("font/Vazir.ttf") format("truetype");
+}
+body {
+  font-family: "vazir" !important;
+  background-color: #0b0c0e;
+}
+
+.search-box input {
+  padding-left: 28px;
+  font-size: 15px;
+  float: right;
+}
+.JHG {
+  margin-left: 50px;
+}
+
+.DFG {
+  color: #fff;
+}
+.item1 img {
+  width: 230px;
+  height: 280px;
+  /* position:relative; */
+  /* z-index:10; */
+}
+.item2 img {
+  width: 500px;
+}
+.bku img {
+  margin-top: 10px;
+  position: relative;
+  top: 80px;
+}
+.item3 img {
+  width: 200px;
+  height: 280px;
+}
+.ASW img {
+  width: 250px;
+  height: 140px;
+  margin-right: 10px;
+}
+.bjk img {
+  margin-top: 80px;
+}
+.TWQ {
+  font-size: 60px;
+  color: #fff;
+}
+/* .SWE {
+  width: 330px;
+  height: 330px;
+} */
+
+/* .smw {
+  width: 330px;
+} */
+/* .SpE {
+  width: 330px;
+  height: 165px;
+} */
+.box-content {
+  width: 100%;
+  height: 400px;
+  /* background-color: #0b0c0e; */
+}
+.search-box {
+  float: left;
+  margin-top: 25px;
+  background: white;
+  height: 40px;
+  border-radius: 40px;
+  padding: 3px;
+}
+
+.search-box:hover > .search-txt {
+  width: 230px;
+  padding: 0 6px;
+  border-radius: 40px;
+}
+.search-btn:hover > .search-btn {
+  background: white;
+}
+.search-btn {
+  color: white;
+  float: right;
+  width: 10px;
+  height: 35px;
+  border-radius: 60%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 15px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0;
+}
+.fa-search img {
+  color: white;
+  width: 20px;
+  height: 20px;
+  margin-left: 30px;
+  margin-right: 5px;
+}
+.img1 {
+  background-image: url(img/1.jpg);
+}
+.img2 {
+  background-image: url(img/2.jpg);
+}
+.img3 {
+  background-image: url(img/3.jpg);
+}
+.img4 {
+  background-image: url(img/5.jpg);
+}
+.img5 {
+  background-image: url(img/6.jpg);
+}
+.imagen {
+  background-size: cover;
+  /* margin: 10px; */
+  /* display: inline-block; */
+  width: 100%;
+}
+.captioncontainer1 {
+  height: 165px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius:15px; */
+}
+.captioncontainer {
+  height: 330px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius:15px; */
+}
+.captioncontainer:hover {
+  opacity: 1;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  height: 330px;
+}
+.captioncontainer1:hover {
+  opacity: 1;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  height: 165px;
+}
+.captioncontainer1:hover > .caption {
+  opacity: 1;
+}
+.captioncontainer:hover > .caption {
+  opacity: 1;
+}
+.caption {
+  opacity: 0;
+  width: 50%;
+  height: 5%;
+  padding: 20px;
+  /* background: rgba(255,255,255,0.685); */
+  /* border:1px solid black; */
+  text-align: center;
+  line-height: 15px;
+  /* border-radius: 15px; */
+}
+.dfilm {
+  font-size: 15px;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+}
+.dfilm1 {
+  font-size: 15px;
+  margin: 20 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+}
+.dfilm i {
+  color: #fff;
+}
+.QLK {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.QLKf {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+.cssbuttons-io-button {
+  background: #c70039;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 1em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #c70039;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #c70039;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #c70039;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+@media screen and (max-width: 768px) {
+  .container.butt {
+    position: relative;
+    top: 1080px;
+  }
+}
